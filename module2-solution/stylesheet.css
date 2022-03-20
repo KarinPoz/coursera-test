@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    width:100%;
+}
+
+h1 {
+    font size: 50px
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    color: black;
+    padding: 50;
+}
+
+.box {
+    background-color: gray;
+    border: 2px solid black;
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    text-align:center;
+    position: relative;
+}
+
+p {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 15px;
+    border: none;
+    padding: 10;
+    text-align:left;
+    position:relative;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+span {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 10;
+    width: 100px;
+    border: 1.5px solid black;
+    text-align: center;
+    float: right;
+    position: relative;
+
+
+}
+
+#chicken {
+    background-color:pink;
+    color: black;
+}
+
+#beef {
+    background-color: red;
+    color: white;
+}
+
+#sushi {
+    background-color:green;
+    color: black;
+}
+/*large screen*/
+
+@media (min-width: 992px) 
+
+    { .col-lg-4 
+        {
+        width: 33.33%;
+        float: left;
+        }
+    }
+
+
+/*medium screen*/
+
+@media (min-width: 768px) and (max-width:991px)
+
+    { .col-md-6
+        {
+        width: 50%;
+        float: left;
+        }
+
+    .col-md-12
+        {
+        width: 100%;
+        float: left;
+        }
+    }
+
+/*small screen*/
+
+@media (max-width: 767px) 
+
+    { .col-sx-12 
+        {
+        width: 100%;
+        float: left;
+        }
+    }
